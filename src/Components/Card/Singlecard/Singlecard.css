@@ -1,0 +1,136 @@
+@keyframes read_more{
+    from {opacity: 0; }
+    to { opacity: 1;  }
+  }
+.scard {
+    margin:10px;
+    width:350px;
+    height:320px;
+    background-color: #002e5b;
+    color: #ffffff;
+  }
+  
+  .font_show{
+      display: flex;
+      flex-direction:column;
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+      font-size:10pt;
+      font-weight: bold;
+  }
+  .scard_img{
+    width:350px;
+    height:285px;
+  }
+  .title1{
+        padding:5px;
+  }
+  .showmore{
+    position: absolute;
+    display: flex;
+    flex-direction:column;
+    list-style: none;
+    opacity: 0;
+    color: #ffffff;
+    background-color: #002e5b;
+    width:330px;
+    height:300px;
+    margin-top: -315px;
+   justify-content: center;
+   align-items: center;  
+   padding: 10px;  
+  }
+  .showmore:hover{
+    animation:read_more;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    text-justify:justify;
+  }
+  .showmore>li{
+      padding:10px;
+      text-align: justify;
+      height: fit-content;
+  }
+  
+  .readmore{
+    border-bottom: 2px solid red;   
+  }
+  .readmore:hover{
+      color:#ffdd00;
+      border-bottom: 2px solid #ffdd00;
+       
+  }
+  @media only screen and (max-width:750px) {
+    .scard {
+      width:40vw;
+    }
+    .font_show{
+      font-size: 8pt;
+    }
+    .scard_img{
+      width:40vw;
+      height:285px;
+    }
+    .showmore{
+      width:37vw;
+      height:301px;
+      margin-top: -310px;
+      font-size:11pt;
+    }
+  }
+  @media only screen and (max-width:425px) {
+    .font_show{
+      font-size: 6pt;
+    }
+    .showmore{
+      font-size:10pt;
+    }
+  }
+  
+  @media only screen and (max-width:350px) {
+    .scard {
+      width:93vw;
+    }
+    
+    .scard_img{
+      width:93vw;
+      height:285px;
+    }
+    .showmore{
+      width:86vw;
+    }
+  }
+  @media only screen and (max-width:225px) {
+    .scard {
+      height:175px;
+    }
+    .font_show{
+      font-size:6pt;
+    }
+    .scard_img{
+      height:150px;
+    }
+    .showmore{
+      height:155px;
+      width: 83vw;
+      margin-top: -172px;
+      font-size:6pt;
+    }
+  }
+  @media only screen and (max-width:150px) {
+    .scard {
+      height:150px;
+    }
+    .font_show{
+      font-size:4pt;
+    }
+    .scard_img{
+      height:130px;
+    }
+    .showmore{
+      height:126px;
+      margin-top: -147px;
+      font-size: 5pt;
+    }
+  }

@@ -1,0 +1,160 @@
+.navbar{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.maxnavbar{
+    background-color: #002e5b;
+    color: #ffffff;
+    font-size: 14pt;
+}
+.maxnavbar ul{
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+align-items: center;
+justify-content: center;
+}
+.maxnavbar ul li {
+    padding:20px;
+    border-bottom: 2px solid #002e5b;
+    text-align: center;
+}
+.maxnavbar ul li:hover {
+    color: #ffdd00;
+    border-bottom: 2px solid #ffdd00;
+}
+
+.rightbar{
+    display:none;
+}
+@media only screen and (max-width:830px) {
+    .home,.about,.productinfo{
+      flex:0 0 20%;
+     
+    }
+  }
+@media only screen and (max-width:482px) {
+    .about,.productinfo,.termsandconditions,.contact{
+      display:none;
+     
+    }
+    .rightbar{
+        display: flex;
+        margin-left:auto;
+    }
+    .navbar ul{
+        justify-content: start;
+    }
+
+  }
+@media only screen and (max-width:162px) {
+    
+    .rightbar,.home{
+       flex: 1 1 100%;
+       text-align: center;
+       align-items: center;
+       justify-content:center;
+    }
+  }
+
+
+  .minnavbar{
+    height: 100vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #002e5b;
+    font-size: 14pt;
+  }
+  .minnavbar ul{
+     display: flex;
+     flex-direction: column;
+     color: #ffffff;
+     list-style: none;
+     padding: 5px;
+     text-align: center;  
+     flex: 1;
+  }
+  .minhome {
+    margin: 5px;
+    padding: 5px;  
+    text-align: center;
+    border-bottom: 2px solid #002e5b;  
+} 
+.minabout {
+  margin: 5px;
+  padding: 5px;  
+  text-align: center;
+  border-bottom: 2px solid #002e5b;;  
+} 
+.minproductinfo {
+  margin: 5px;
+  padding: 5px;  
+  text-align: center;
+  border-bottom: 2px solid #002e5b;
+}
+ .mintermsandconditions {
+  margin: 5px;
+  padding: 5px;  
+  text-align: center;
+  border-bottom: 2px solid #002e5b;
+}
+ .mincontact {
+  margin: 5px;
+  padding: 5px;  
+  text-align: center;
+  border-bottom: 2px solid #002e5b;  
+}
+  .minhome:hover {
+    color: #ffdd00;
+    border-bottom: 2px solid #ffdd00;  
+} 
+.minabout:hover {
+    color: #ffdd00;
+    border-bottom: 2px solid #ffdd00;  
+} 
+.minproductinfo:hover {
+    color: #ffdd00;
+    border-bottom: 2px solid #ffdd00;  
+}
+ .mintermsandconditions:hover {
+    color: #ffdd00;
+    border-bottom: 2px solid #ffdd00;  
+}
+ .mincontact:hover {
+    color: #ffdd00;
+    border-bottom: 2px solid #ffdd00;  
+}
+  .mdivrightbar{
+    margin-left: auto;
+  }
+  .mrightbar{
+      margin: 5px;
+      padding: 5px;  
+      text-align: center;
+      font-size: 25pt;
+      width:fit-content;
+      font-weight: bolder;
+      border: 2px solid #ffffff;
+      color: #ffffff;
+  }
+  .mrightbar:hover{
+    color: red;
+    border: 2px solid red; 
+  }
+
+  
+  @media only screen and (max-width:225px) {
+    .minnavbar{
+        font-size:8vw;
+    } 
+  }
+  @media only screen and (max-width:150px) {
+    .minnavbar{
+        font-size:7vw;
+    }
+  }
+  
