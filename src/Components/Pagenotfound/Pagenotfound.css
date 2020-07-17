@@ -1,31 +1,21 @@
 .pagenotfound{
     color: #ffffff;
     background-color: #002e5b;
-    font-weight: bolder;
-    font-size: 5vw;
+    height:100%;
+    width:100%;
+    magin:0;
+    padding:0;
+   
   }
   .pagenotfound > ul {
+    font-weight: bolder;
+    font-size:10pt;
     display: flex;
     list-style: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:90.7vh;
+    height:100%;
   }
 
-  @media only screen and (max-width:830px) {
-    .pagenotfound > ul {
-      height:80vh;
-    }
-    
-  }
-@media only screen and (max-width:482px) {
-  .pagenotfound > ul {
-    height:90.7vh;
-  }
-  }
-@media only screen and (max-width:150px) {
-  .pagenotfound > ul {
-    height:80vh;
-  }
-  }
+  
